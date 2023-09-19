@@ -70,3 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
       displayTasks();
     });
   }
+
+  function toggleTask(index) {
+    todo[index].disabled = !todo[index].disabled;
+    saveToLocalStorage();
+    displayTasks();
+  }
+  
