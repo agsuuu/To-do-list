@@ -76,4 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
     saveToLocalStorage();
     displayTasks();
   }
-  
+
+  function deleteAllTasks() {
+    todo = [];
+    saveToLocalStorage();
+    displayTasks();
+  }
